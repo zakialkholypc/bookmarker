@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="p-0 m-0">
+
+    <main class="py-5">
+        <div class="container d-flex flex-column align-items-center py-5">
+            <h1 class="mb-5 py-2">Bookmarker</h1>
+            <div class="bookmarkerinput py-4">
+                <div class="inputhead">
+                    <h3 class="text-center"><i class="bi bi-bookmark-fill"></i> Bookmark your favorite sites <i
+                            class="bi bi-bookmark-fill"></i></h3>
+                </div>
+                <div class="inputbody mt-5">
+                    <div class="nameinput p-3">
+                        <h5><i class="fa-solid fa-book-bookmark"></i> Site Name</h5>
+                        <input id="websitename" type="text" class="form-control" placeholder="Bookmark Name">
+                    </div>
+                    <div class="urlinput p-3">
+                        <h5><i class="fa-solid fa-link pe-2"></i> Site URL </h5>
+                        <input id="websiteurl" type="text" class="form-control" placeholder="Website URL">
+                    </div>
+                    <div class="submitinput d-flex justify-content-center">
+                        <button id="addbutton" class="btn btn-primary">Submit</button>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="UrlTable d-flex w-100">
+                <table class="table table-light">
+                    <thead>
+                        <tr>
+                            <th>Index</th>
+                            <th>Website Name</th>
+                            <th>Visit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablebody">
+
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <dialog id="dialog" class="border-0 bg-white p-4 rounded-2">
+        <form method="dialog">
+            <div class="">
+                <header class="box-header w-100 d-flex justify-content-between align-items-center mb-4">
+                    <div class="circles d-flex">
+                        <span class="rounded-circle bg-danger me-2"></span>
+                        <span class="rounded-circle bg-warning me-2"></span>
+                        <span class="rounded-circle bg-success me-2"></span>
+                    </div>
+                    <button class="btn border-0" id="closeBtn">
+                        <i class="fa-solid fa-xmark close fs-3"></i>
+                    </button>
+                </header>
+                <p class="m-0 pb-2">
+                    Site Name or Url is not valid, Please follow the rules below :
+                </p>
+
+                <div class="rules">
+                    <p>
+                        <i class="fa-regular fa-circle-right py-2  pe-2"></i>Site name must
+                        contain at least 3 characters
+                    </p>
+    
+                    <p> <i class="fa-regular fa-circle-right py-2 pe-2 "></i>Site URL must be a
+                        valid one
+                    </p>
+                </div>
+            </div>
+        </form>
+    </dialog>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

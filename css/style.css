@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+body {
+  background-color: #f7ecde;
+}
+
+main h1 {
+  color: #352e28;
+  font-family: "Pacifico", cursive;
+  line-height: 60px;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+}
+main h1::before {
+  content: "";
+  position: absolute;
+  background-color: #fec260;
+  width: 100%;
+  height: 25%;
+  bottom: 10px;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+main h1:hover:before {
+  height: 50%;
+}
+.bookmarkerinput {
+  width: 100%;
+  border-top: 2px dotted black;
+  border-bottom: 2px dotted black;
+}
+
+.inputhead h3 {
+  font-family: "Righteous", cursive;
+  background-image: linear-gradient(to right, #3ca55c, #b5ac49 80%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.submitinput button {
+  padding: 6px 48px;
+  background-color: #d1512d;
+  border: none;
+}
+.submitinput button:hover {
+  background-color: #bb4120 !important;
+}
+h5 {
+  color: #212529;
+  font-family: "PT Sans Caption", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+}
+#tablebody .button-visit {
+  color: white;
+  background-color: #9eb23b;
+  transition: all 0.3s ease-in-out;
+}
+#tablebody .button-visit:hover {
+  background-color: #8a9e23;
+}
+.bookmarkerinput input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #d99c39;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fec26055;
+}
+dialog {
+  width: 500px;
+}
+dialog p {
+  color: #352e28;
+  font-family: "Bree Serif", serif;
+  font-size: 21px;
+
+  line-height: 27.3px;
+  font-weight: 400;
+}
+.circles span {
+  width: 20px;
+  height: 20px;
+}
+.rules p {
+  color: #212529;
+  font-family: "PT Sans Caption", sans-serif;
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.rules i {
+  color: #bb4120;
+}
